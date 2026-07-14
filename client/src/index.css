@@ -1,0 +1,42 @@
+@import '@fontsource-variable/space-grotesk';
+@import '@fontsource-variable/inter';
+@import 'tailwindcss';
+
+@theme {
+  --font-heading: 'Space Grotesk Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  /* Charcoal (text / dark surfaces) */
+  --color-charcoal: #2b2b2b;
+  --color-charcoal-soft: #4a4a4a;
+  --color-charcoal-muted: #7a7a7a;
+
+  /* Warm Orange (primary) */
+  --color-brand-50: #fff3ec;
+  --color-brand-100: #ffe0cc;
+  --color-brand-400: #ff8b4d;
+  --color-brand: #f2652a;
+  --color-brand-600: #d9531b;
+  --color-brand-700: #b34212;
+
+  /* Fresh Green (accent) */
+  --color-accent-50: #e9f9ef;
+  --color-accent: #22b364;
+  --color-accent-600: #1a9553;
+
+  /* Neutral surface */
+  --color-cream: #faf7f3;
+  --color-line: #ece7e1;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-charcoal font-body antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+}
