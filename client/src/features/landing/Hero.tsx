@@ -8,9 +8,10 @@ export function Hero() {
       id="top"
       className="relative flex min-h-[calc(100svh-4rem)] items-center overflow-hidden bg-cream"
     >
-      {/* soft warm background accents */}
-      <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-brand-100 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-32 -left-20 h-80 w-80 rounded-full bg-accent-50 blur-3xl" />
+      {/* soft warm background accents — -z-10 keeps them behind the text (absolute elements
+          otherwise paint above normal-flow content regardless of DOM order) */}
+      <div className="pointer-events-none absolute -right-24 -top-24 -z-10 h-96 w-96 rounded-full bg-brand-100 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-32 -left-20 -z-10 h-80 w-80 rounded-full bg-accent-50 blur-3xl" />
 
       <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 md:grid-cols-2">
         <motion.div
