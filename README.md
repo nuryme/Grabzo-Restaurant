@@ -4,6 +4,8 @@ Grabzo is a digital waiter for dine-in restaurants. A customer scans the QR code
 
 No commission-taking delivery apps, no paper menus, no shouting orders across the kitchen.
 
+## Live Link: https://grabzo-restaurant.vercel.app
+
 ## What it does
 
 **For customers**
