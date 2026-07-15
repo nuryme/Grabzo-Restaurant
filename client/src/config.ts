@@ -2,7 +2,7 @@ import type { MenuItem, RestaurantSettings } from './types'
 
 /** Placeholder brand identity for the demo. Swapped for a real owner's details later. */
 export const restaurant: RestaurantSettings = {
-  name: 'Grabzo',
+  name: 'Delectus',
   tagline: 'Flame-grilled burgers, wood-fired pizza, and cold drinks — ordered from your table.',
   phone: '+880 1700-000000',
   address: 'House 12, Road 7, Banani, Dhaka 1213',
